@@ -27,7 +27,7 @@ namespace Slantar.Services
 
         private static T Cache<T>(ref T cachedVariable)
         {
-            if (cachedVariable == null) { cachedVariable = Core.Get<T>(); }
+            if (cachedVariable == null) { cachedVariable = Get<T>(); }
             return cachedVariable;
         }
     }
